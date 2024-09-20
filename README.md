@@ -1,65 +1,68 @@
-# experiment README
+Here's a Markdown version of the README for your VS Code extension:
 
-This is the README for your extension "experiment". After writing up a brief description, we recommend including the following sections.
+```markdown
+# Lask.AI
+
+Lask.AI is a Visual Studio Code extension designed to enhance your coding experience by providing intelligent code context management and seamless integration with GitHub repositories. With Lask.AI, you can easily manage code blocks, load and analyze remote repository content, and improve your coding efficiency with AI-powered features.
+
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Code Block Context Management**: Add, view, and clear code blocks for better context-aware coding.
+- **GitHub Repository Integration**: Load content from remote GitHub repositories and manage it within your workspace.
+- **AI-Powered Code Assistance**: Receive intelligent code suggestions and analysis.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Open Visual Studio Code.
+2. Navigate to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
+3. Search for `Lask.AI`.
+4. Click `Install`.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Alternatively, you can install the extension directly from the command line:
 
-## Requirements
+```bash
+code --install-extension lask-ai-0.0.1.vsix
+```
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Usage
 
-## Extension Settings
+### Code Block Context
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+- **Add Code Block Context**:
+  1. Click on the `Add Code Block Context` button in the sidebar.
+  2. Select a code file from your local file system.
+  3. The content will be added to the context and can be used for AI-powered suggestions.
 
-For example:
+- **View or Clear Context**:
+  - Use the `Context Manager` commands from the Command Palette (`Ctrl+Shift+P`) to view or clear the current context.
 
-This extension contributes the following settings:
+### GitHub Repository Integration
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+- **Load Remote Repository**:
+  1. Click on the `Add GitHub Repo Context` button in the sidebar.
+  2. Enter the URL of the GitHub repository.
+  3. Optionally, provide a GitHub Personal Access Token for higher API rate limits.
+  4. The extension will fetch and add the repository content to the context.
 
-## Known Issues
+## Commands
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- `Lask.AI: Add Code Block Context`: Opens a file dialog to add code context.
+- `Lask.AI: Add GitHub Repo Context`: Prompts for a GitHub repository URL and token to load context.
 
-## Release Notes
 
-Users appreciate release notes as you update your extension.
 
-### 1.0.0
+## Contributing
 
-Initial release of ...
+We welcome contributions to Lask.AI! If you have suggestions or find a bug, please open an issue on [GitHub](https://github.com/your-repo/lask-ai/issues). Pull requests are also welcome.
 
-### 1.0.1
+## License
 
-Fixed issue #.
+This extension is licensed under the [MIT License](LICENSE).
 
-### 1.1.0
+## Support
 
-Added features X, Y, and Z.
+For support or questions, please contact us at [support@laskai.com](mailto:support@laskai.com) or visit our [GitHub Discussions](https://github.com/your-repo/lask-ai/discussions) page.
+```
 
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Feel free to adjust the links and any specific details to better fit your project.

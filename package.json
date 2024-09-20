@@ -1,11 +1,16 @@
 {
-  "name": "experiment",
-  "displayName": "Experiment",
-  "description": "first extension",
-  "version": "0.0.1",
+  "name": "lask-ai",
+  "displayName": "Lask.AI",
+  "description": "Valuebound",
+  "version": "1.0.3",
   "engines": {
     "vscode": "^1.93.0"
   },
+  "publisher": "skychat",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/leena18/Ai-Code-Assistant/tree/aakash2"
+    },
   "categories": [
     "Other"
   ],
