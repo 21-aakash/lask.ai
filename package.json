@@ -2,15 +2,16 @@
   "name": "lask-ai",
   "displayName": "Lask.AI",
   "description": "Valuebound",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "engines": {
     "vscode": "^1.93.0"
   },
   "publisher": "skychat",
     "repository": {
         "type": "git",
-        "url": "https://github.com/leena18/Ai-Code-Assistant/tree/aakash2"
+        "url": "https://github.com/21-aakash/lask.ai"
     },
+    "icon": "media/icon.png",  
   "categories": [
     "Other"
   ],
@@ -38,7 +39,7 @@
         {
           "id": "experiment-sidebar",
           "title": "Chatbot",
-          "icon": "resources/icon.png"
+          "icon": "media/icon.png"
         }
       ]
     },

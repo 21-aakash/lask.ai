@@ -59,6 +59,7 @@ class ExperimentViewProvider {
                         text: 'Sorry, there was an error with the AI.'
                     });
                 }
+                break;
 
 
                 case 'addCodeBlockContext':
@@ -66,7 +67,7 @@ class ExperimentViewProvider {
                 this.addCodeBlockContext();
                 break;
 
-
+              
 
 
             }
@@ -127,7 +128,9 @@ class ExperimentViewProvider {
        html, body {
     height: 100%;
     margin: 0; /* Ensure there's no default margin */
-}
+
+    background-color:#262c45;
+    }
         #navbar {
             
             padding: 5px;
@@ -232,24 +235,26 @@ class ExperimentViewProvider {
 }
 
 #sendButton {
-    width: 18%;
-    padding: 8px;
+    width: 25%;
+    
+   
     border: none;
-    border-radius: 4px;
-    background-color: #007acc; /* Blue background */
-    color: white; /* White text */
+    
+    background:transparent; /* Blue background */
+    
     font-size: 14px;
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s ease;
 }
 
-#sendButton:hover {
-    background-color: #005fa3; /* Darker blue on hover */
+#sendButton img {
+    
+height:40px;
+width:40px;
+
 }
 
-#sendButton:active {
-    background-color: #004d7a; /* Even darker blue on click */
-}
+
 
         #contextOptions {
             margin-top: 20px;
@@ -386,7 +391,11 @@ h3 {
 }
 
 
+.logo{
 
+    width: 75px;
+    height: 75px;
+}
 
 
 
@@ -397,7 +406,7 @@ h3 {
 
 
     <div>  
-
+   
     <button class="nav-button active" id="chatNav">Chat</button>
     <button class="nav-button" id="contextNav">Context</button>
     
@@ -422,12 +431,21 @@ h3 {
     
     <!-- Chat Page -->
     <div id="chatPage" class="active">
-        <h2>Welcome to Lask.AI✨</h2>
+          
+       
+<h2>Welcome to Lask.AI✨</h2>
+    
+        
         <div id="chatOutput"></div>
 
         <div class="chat-input-container">
+          
         <input type="text" id="userInput" placeholder="Type your message..." />
-        <button id="sendButton">Send</button>
+        <button id="sendButton">
+                <img src="https://cdn-icons-png.freepik.com/512/10023/10023096.png?ga=GA1.1.1511077226.1726807959" alt="Profile" id="profileIcon" />
+
+        
+        </button>
    
         </div>
      </div>
@@ -612,7 +630,7 @@ document.getElementById('uploadReqDocumentButton').addEventListener('click', () 
             const message = event.data;
             if (message.command === 'showResponse') {
                 const botResponseElement = document.createElement('div');
-                botResponseElement.innerHTML = 'AI: <pre class="CodeMirror"><code>' + message.text + '</code></pre>';
+                botResponseElement.innerHTML = 'Lask: <pre class="CodeMirror"><code>' + message.text + '</code></pre>';
                 document.getElementById('chatOutput').appendChild(botResponseElement);
                 
                 // Initialize CodeMirror
