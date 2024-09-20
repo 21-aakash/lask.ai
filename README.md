@@ -1,6 +1,4 @@
-Here's a Markdown version of the README for your VS Code extension:
 
-```markdown
 # Lask.AI
 
 Lask.AI is a Visual Studio Code extension designed to enhance your coding experience by providing intelligent code context management and seamless integration with GitHub repositories. With Lask.AI, you can easily manage code blocks, load and analyze remote repository content, and improve your coding efficiency with AI-powered features.
